@@ -1,0 +1,25 @@
+# 2级优先级
+"*":
+ "&View": 视图
+
+# 最后优先级
+otherwise:
+  "&Edit": 编辑
+
+# 等级优先级
+org:
+  eclipse:
+    swt:
+      widgets:
+        Label:
+          "KNIME Console": 日志控制台
+        Button:
+          "Cancel": 取消
+        # 菜单
+        MenuItem:
+          "&File": 文件
+          "&Help": 帮助
+      custom:
+        CTabItem:
+          Console: 控制台
+          "Node Monitor": 节点监视器
