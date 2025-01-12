@@ -40,7 +40,7 @@
 
 ### 如何添加新的语言内容
 1. 语言文件 [zh_CN.yaml](eclipse-swt%2Fsrc%2Fmain%2Fresources%2Fzh_CN.yaml) 简体中文配置文件
-2. 理解如何填写配置文件
+2. [理解如何填写配置文件](docs%2FHowConfigLang.md)
 
 ### 技术方案
 * 动态机制(已经实现)
