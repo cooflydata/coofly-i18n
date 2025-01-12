@@ -17,6 +17,10 @@
 1. 对 RCP 平台版本无依赖
 2. 无需倾入 RCP 应用程序代码，即可实现所有可见文字（菜单，按钮，弹窗等）的多语言支持
 
+### 依赖要求
+1. Java 17 (可降低版本，需要自行修改pom.xml文件)
+2. eclipse swt 3
+
 ### 使用步骤
 1. 克隆代码
     ```shell
@@ -35,7 +39,7 @@
     ```
 4. 给RCP应用追加对应的`javagent`参数
     ```shell
-    echo -javaagent:coofly-i18n\i18n-agent\target\i18n-agent-1.0-SNAPSHOT-jar-with-dependencies.jar >> /your/eclipse-rcp-install-dir/eclipse.ini
+    echo -javaagent:coofly-i18n\i18n-agent\target\i18n-agent-0.1-BATE-jar-with-dependencies.jar >> /your/eclipse-rcp-install-dir/eclipse.ini
     ```
 
 ### 如何添加新的语言内容
