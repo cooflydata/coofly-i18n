@@ -29,13 +29,13 @@
 3. 覆盖RCP对应的swt jar包，**请确保构建的swt包文件名称与将要覆盖的swt文件名称完全一致。**
     ```shell
     # 备份
-    cp /your/eclipse-rcp/install-dir/plugins/org.eclipse.swt_*.jar /your/eclipse-rcp/install-dir/plugins/org.eclipse.swt_*.jar_back
+    cp /your/eclipse-rcp-install-dir/plugins/org.eclipse.swt_*.jar /your/eclipse-rcp-install-dir/plugins/org.eclipse.swt_*.jar_back
     # 替换
     cp eclipse-swt/target/org.eclipse.swt_*.jar /your/eclipse-rcp/plugins
     ```
 4. 给RCP应用追加对应的`javagent`参数
     ```shell
-    echo -javaagent:coofly-i18n\i18n-agent\target\i18n-agent-1.0-SNAPSHOT-jar-with-dependencies.jar >> eclipse.ini
+    echo -javaagent:coofly-i18n\i18n-agent\target\i18n-agent-1.0-SNAPSHOT-jar-with-dependencies.jar >> /your/eclipse-rcp-install-dir/eclipse.ini
     ```
 
 ### 如何添加新的语言内容
